@@ -1,0 +1,70 @@
+/* ---------- Global Styles ---------- */
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: dodgerblue;
+}
+body {
+  max-width: 75%;
+  margin: auto;
+}
+/* ---------- Navigation Styles ---------- */
+nav {
+  border-bottom: 1px solid lightgrey;
+  justify-content: center;
+}
+#nav-items {
+  gap: 40px;
+  padding: 0px 40px;
+}
+
+/* ---------- Profile Section Styles ---------- */
+#my-name {
+  margin-bottom: 0;
+}
+#description {
+  max-width: 500px;
+}
+#profile {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#profile-picture {
+  border-radius: 50%;
+  box-shadow: 0px 10px 5px lightgrey;
+}
+
+/* ---------- Projects Section Styles ---------- */
+#project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.project-card {
+  max-width: 400px;
+  box-shadow: 0 5px 5px lightgrey;
+  border-radius: 10px;
+}
+.project-info {
+  padding: 10px 20px;
+}
+/* ---------- Skills Section Styles ---------- */
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-description {
+  max-width: 50%;
+  text-align: right;
+}
+/* ---------- Footer Section Styles ---------- */
+footer {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
