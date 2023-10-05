@@ -1,5 +1,4 @@
 /* ---------- Global Styles ---------- */
-
 html {
   scroll-behavior: smooth;
 }
@@ -34,6 +33,7 @@ nav {
 }
 #profile-picture {
   border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* ---------- Projects Section Styles ---------- */
@@ -45,7 +45,7 @@ nav {
 }
 .project-card {
   max-width: 400px;
-  box-shadow: 0 5px 5px lightgrey;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 .project-card img {
@@ -56,6 +56,7 @@ nav {
 .project-info {
   padding: 10px 20px;
 }
+
 /* ---------- Skills Section Styles ---------- */
 .skill {
   display: flex;
@@ -65,16 +66,22 @@ nav {
   max-width: 50%;
   text-align: right;
 }
+
 /* ---------- Theme Changer Styles ---------- */
 #theme-change-button {
+  /* this is to center the sun icon in the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position fixed sets the element to always display in the same location */
   position: fixed;
   bottom: 0;
   right: 0;
+  margin: 15px;
   width: 50px;
   height: 50px;
-  margin: 5px;
-  background-color: dodgerblue;
   border-radius: 25px;
+  background-color: dodgerblue;
 }
 
 /* ---------- Footer Section Styles ---------- */

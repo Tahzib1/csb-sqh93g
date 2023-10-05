@@ -2,7 +2,7 @@
 <html data-theme="light">
   <head>
     <title>My Portfolio</title>
-    <!-- Pico.css -->
+    <!-- Pico.css library that gives us some default styles for fonts, buttons, etc -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -12,7 +12,8 @@
   <body>
     <nav>
       <ul id="nav-items">
-        <li><a href="#" class="nav-item">Home</a></li>
+        <!-- by setting the href to id's on the page, we can link to different sections -->
+        <li><a href="#profile" class="nav-item">Home</a></li>
         <li><a href="#projects" class="nav-item">Projects</a></li>
         <li><a href="#skills" class="nav-item">Skills</a></li>
       </ul>
@@ -29,9 +30,10 @@
           </p>
         </div>
         <div>
+          <!-- we should always use alt tags on our images so visually impared users can understand our image -->
           <img
             src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg"
-            alt="profile picture"
+            alt="professional headshot"
             id="profile-picture"
             height="200px"
             width="200px"
@@ -89,6 +91,7 @@
           </div>
         </div>
       </section>
+
       <section id="skills">
         <h3>Skills</h3>
         <ul>
@@ -119,7 +122,8 @@
         </ul>
       </section>
 
-      <button id="theme-change-button"></button>
+      <!-- this special code is for the sun emoji. We could add a custom icon here if we wanted -->
+      <button id="theme-change-button">&#9728;</button>
     </main>
 
     <footer>
@@ -129,6 +133,7 @@
       <a>Blog</a>
     </footer>
 
+    <!-- our javascript code. We put this at the bottom so everything is loaded before it gets run -->
     <script src="script.js"></script>
   </body>
 </html>
